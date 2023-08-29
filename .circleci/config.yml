@@ -20,7 +20,8 @@ workflows:
       - orb-tools/pack
       - orb-tools/publish:
           context: dev
-          requires: [orb-tools/pack]
+          requires: 
+            - orb-tools/pack
           vcs_type: << pipeline.project.type >>
           orb_name: xavidop/circleci-orb-hello-world
           pub_type: dev
