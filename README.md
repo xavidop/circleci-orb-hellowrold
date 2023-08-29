@@ -1,6 +1,10 @@
 # Orb Template
 
+circleci setup
+
 create `dev` context with `CIRCLE_TOKEN` env var
+
+circleci namespace create xavidop github  xavidop
 
 circleci orb init .
 
