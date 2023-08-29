@@ -1,10 +1,14 @@
 # Orb Template
 
+https://circleci.com/docs/creating-orbs/
+
 circleci setup
 
 create `dev` context with `CIRCLE_TOKEN` env var
 
-circleci namespace create xavidop github  xavidop
+circleci namespace create xavidop github xavidop
+Settings -> Security -> Allow uncertified orbs
+circleci orb create xavidop/circleci-orb-hello-world
 
 circleci orb init .
 
